@@ -92,7 +92,7 @@ for i in range(0, 5):
     sonLigne.append(sf.Sound(sf.SoundBuffer.from_file("Sons/ligne" + str(i) +".wav"))) #On charge le son de chaque ligne en mémoire pour les utiliser plus tard
 
 # - Initialisation du moteur de texte -
-police = sf.Font.from_file("C:\Windows\Fonts\Arial.ttf") #Chargement de la police d'écriture
+police = sf.Font.from_file("Arial.ttf") #Chargement de la police d'écriture
 scoreText = sf.Text() #Création de l'objet texte pour le score
 scoreText.font = police #Définition de sa police (c'est celle chargée)
 scoreText.character_size = 15 #Définition de la taille des caractères

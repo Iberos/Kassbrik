@@ -1,0 +1,8 @@
+Bonjour, 
+
+pour exécuter Kassbrik, il est nécessaire d'utiliser Python 3.3.0 (téléchargeable sur https://www.python.org/ )
+Il est également nécessaire d'installer PySFML compatible avec Python 3.3.0 (téléchargeable sur http://www.python-sfml.org/download.html )
+/!\ Attention également au 32 et 64 bits /!\
+Nous vous conseillons également d'utiliser Windows car aucun test du programme n'a été fait sur Linux.
+
+Merci.
