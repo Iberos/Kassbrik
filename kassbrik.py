@@ -134,13 +134,13 @@ while fenetre.is_open: #Tant que la fenêtre SFML est ouvert...
                 fenetre.close()
     	    
             # Touches
-            if type(event) is sf.KeyEvent and event.pressed and event.code is sf.Keyboard.RIGHT: #flèche droite
-                if (padX < 383) and  (fini == False): #Peut-on déplacer la balle (la balle ne va pas sortir par la droite et la partie n'est pas finie)
-                    padX=padX+12
+    if sf.Keyboard.is_key_pressed(sf.Keyboard.RIGHT): #flèche droite
+            if (padX < 383) and  (fini == False): #Peut-on déplacer la balle (la balle ne va pas sortir par la droite et la partie n'est pas finie)
+                    padX=padX+3
 
-            if type(event) is sf.KeyEvent and event.pressed and event.code is sf.Keyboard.LEFT: #flèche gauche
-                if (padX > 0) and (fini == False): #Peut-on déplacer la balle (la balle ne va pas sortir par la gauche et la partie n'est pas finie)
-                    padX=padX-12
+    if sf.Keyboard.is_key_pressed(sf.Keyboard.LEFT): #flèche gauche
+            if (padX > 0) and (fini == False): #Peut-on déplacer la balle (la balle ne va pas sortir par la gauche et la partie n'est pas finie)
+                    padX=padX-3
 
 
     fenetre.clear(sf.Color(120, 120, 120)) #Vide la fenêtre avec du gris
